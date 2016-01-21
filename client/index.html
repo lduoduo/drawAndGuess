@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>写一个字</title>
+	<link rel="stylesheet" href="css/home.css">
+	
+</head>
+<body>
+	<div id="message" class="hide">test</div>
+	<div id="login" class="hide">
+		<form>
+			<input id="useid" placeholder="input name here"/>
+			<a id="loginBtn" href="#" onclick="newUserRequest(this);return false;"></a>
+		</form>
+	</div>
+	
+	<div id="main">
+		<canvas id="canvas">您的浏览器不支持canvas绘图</canvas>
+		<div id='opDiv'>
+		<div class="float-left" id="colorpicker">
+			<div class="colorBtn" data-value="#000000"></div>
+			<div class="colorBtn" data-value="#FF5B0A"></div>
+			<div class="colorBtn" data-value="#D7FF0A"></div>
+			<div class="colorBtn" data-value="#0AFF1F"></div>
+			<div class="colorBtn" data-value="#D00AFF"></div>
+		</div>
+		<a class="float-right" id="clearBtn">重画</a>
+		</div>
+	</div>
+	
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/draw.js"></script>
+	<script src="js/client.js"></script>
+
+</body>
+</html>
