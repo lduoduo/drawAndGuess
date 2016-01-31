@@ -4,6 +4,8 @@
 
 ##How to use
 
+![alt text](http://ww3.sinaimg.cn/bmiddle/74d94e2egw1f0itfqjd60j21kw1kw4b6.jpg)
+
 >1. clone to your local, cd project folder
 2. run npm install
 3. run node .
